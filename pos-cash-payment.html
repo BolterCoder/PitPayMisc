@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cash Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="left">3:49PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>83%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <header class="pos-page-head">
+    <a class="pos-back" href="pos-cart-filled.html" aria-label="Back">&larr;</a>
+    <h1 style="color:var(--text-muted)">POS Cart</h1>
+  </header>
+
+  <section class="cart-layout" style="opacity:0.55">
+    <div class="cart-products">
+      <div class="cart-event-card">
+        <div class="event-date-badge">
+          <div class="dow">FRI</div>
+          <div class="day">MAY 15</div>
+        </div>
+        <div class="info"><h2>USCS Sprint Cars</h2><p>Hunt the Front's Southern Raceway</p></div>
+        <span class="on-sale">ON SALE</span>
+      </div>
+      <div class="cart-pill-row"><span class="cart-pill">General Admission</span></div>
+      <div class="cart-product">
+        <div class="left"><h3>ADULT General Admission</h3><div class="price">$25.00</div></div>
+        <div class="qty">
+          <button class="qty-btn">&minus;</button>
+          <span class="num">2</span>
+          <button class="qty-btn solid">+</button>
+        </div>
+      </div>
+      <div class="cart-product">
+        <div class="left"><h3>KIDS General Admisstion</h3><div class="price">$0.00</div></div>
+        <div class="qty">
+          <button class="qty-btn">&minus;</button>
+          <span class="num">1</span>
+          <button class="qty-btn solid">+</button>
+        </div>
+      </div>
+    </div>
+    <div></div>
+  </section>
+
+  <div class="sheet-wrap">
+    <a href="pos-cart-filled.html" class="sheet-scrim" aria-label="Close"></a>
+    <aside class="sheet cash-sheet">
+      <div class="sheet-head">
+        <h2>Cash Payment</h2>
+        <a href="pos-cart-filled.html" class="close" aria-label="Close">&times;</a>
+      </div>
+
+      <div class="cash-summary">
+        <div class="row"><span class="label">Balance Due</span><span class="val">$50.00</span></div>
+        <div class="row divider"><span class="label">Cash Tendered</span><span class="val orange">$0</span></div>
+      </div>
+
+      <div class="keypad">
+        <button class="quick">$10</button>
+        <button>1</button><button>2</button><button>3</button>
+
+        <button class="quick">$20</button>
+        <button>4</button><button>5</button><button>6</button>
+
+        <button class="quick">$50</button>
+        <button>7</button><button>8</button><button>9</button>
+
+        <button class="quick">$100</button>
+        <button>.</button><button>0</button><button aria-label="Backspace">&#9003;</button>
+      </div>
+
+      <div class="change-card">
+        <span class="label">Change Due</span>
+        <span class="amt">-$50.00</span>
+      </div>
+
+      <div class="confirm-row">
+        <a class="btn-c" href="pos-cart-filled.html">Cancel</a>
+        <button class="btn-c disabled" disabled>CONFIRM</button>
+      </div>
+    </aside>
+  </div>
+
+  <div class="home-indicator"></div>
+</body>
+</html>

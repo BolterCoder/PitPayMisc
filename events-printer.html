@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Printer Setup - Ticket Hoss POS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="left">3:43PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>86%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <header class="dash-header">
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <h1>Events</h1>
+  </header>
+
+  <section class="dash-grid">
+    <div class="dash-main">
+      <div class="section-label">NEXT UP</div>
+      <div class="featured-card active">
+        <div class="featured-active-head">
+          <h2 style="color:var(--text-muted)">USCS Sprint Cars</h2>
+          <span class="upcoming-pill" style="opacity:0.5">&#128197; Upcoming</span>
+        </div>
+        <div class="featured-active-date" style="opacity:0.6"><span class="clock"></span> Friday, May 15</div>
+        <div class="stats-row" style="opacity:0.5">
+          <div class="stat"><div class="num">55</div><div class="label">Tickets Sold</div></div>
+          <div class="stat"><div class="num accent">0</div><div class="label">Checked In</div></div>
+          <div class="stat"><div class="num">55</div><div class="label">Remaining</div></div>
+        </div>
+        <div class="featured-actions active" style="opacity:0.4">
+          <button class="action-btn">SELL</button>
+          <button class="action-btn">MANAGE</button>
+          <button class="action-btn disabled">SCAN</button>
+        </div>
+      </div>
+
+      <div class="section-label">UPCOMING</div>
+      <div class="event-row filled" style="opacity:0.6">
+        <div class="event-date-badge">
+          <div class="dow">SAT</div>
+          <div class="day">MAY 16</div>
+        </div>
+        <div class="event-meta">
+          <h3>USCS Sprint Car and Late Model Challenge Series Round 3</h3>
+          <p>Hunt the Front's Southern Raceway</p>
+        </div>
+      </div>
+    </div>
+    <aside></aside>
+  </section>
+
+  <div class="sheet-wrap">
+    <a href="events.html" class="sheet-scrim" aria-label="Close"></a>
+    <aside class="sheet">
+      <div class="sheet-head">
+        <h2>Printer Setup</h2>
+        <a href="events.html" class="close" aria-label="Close">&times;</a>
+      </div>
+
+      <button class="sheet-cta">FIND PRINTERS</button>
+
+      <div class="sheet-icon-block">
+        <div class="icon-lg" aria-hidden="true">&#128246;</div>
+        <p>Make sure your printer is on the same network, then tap "Find Printers".</p>
+      </div>
+
+      <div class="sheet-divider">or enter IP manually</div>
+
+      <div class="field">
+        <label for="ip">IP Address</label>
+        <input id="ip" type="text" value="192.168.1.100">
+      </div>
+      <div class="field">
+        <label for="port">Port</label>
+        <input id="port" type="text" value="9100">
+      </div>
+
+      <button class="btn-secondary disabled" disabled>SAVE &amp; TEST</button>
+    </aside>
+  </div>
+
+  <div class="home-indicator"></div>
+</body>
+</html>

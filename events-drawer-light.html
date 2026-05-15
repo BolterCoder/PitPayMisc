@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu (Light) - Ticket Hoss POS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:#f3f4f6;color:#111827">
+  <div class="status-bar" style="color:#111827">
+    <div class="left">3:49PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span style="background:#111827"></span><span style="background:#111827"></span><span style="background:#111827"></span><span style="background:#111827"></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>83%</span>
+      <span class="battery-icon" style="border-color:#111827"><span class="battery-fill" style="background:#111827"></span></span>
+    </div>
+  </div>
+
+  <header class="dash-header" style="border-bottom-color:#e5e7eb">
+    <button class="menu-btn" style="color:#111827" aria-label="Menu">&#9776;</button>
+    <h1 style="color:#111827">Events</h1>
+  </header>
+
+  <section class="dash-grid" style="opacity:0.45">
+    <div class="dash-main">
+      <div class="section-label">NEXT UP</div>
+      <div class="featured-card active" style="background:#fff;border-color:#e5e7eb;color:#111827">
+        <div class="featured-active-head">
+          <h2 style="color:#111827">USCS Sprint Cars</h2>
+          <span class="upcoming-pill" style="color:#111827;background:#f3f4f6;border-color:#e5e7eb">&#128197; Upcoming</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="drawer-wrap">
+    <aside class="drawer">
+      <div class="drawer-logo">
+        <div class="hoss-logo">
+          <div class="ticket">TICKET</div>
+          <div class="hoss">HOSS</div>
+          <div class="powered">powered by PitPay</div>
+        </div>
+      </div>
+
+      <div class="drawer-name">Frank Bolter</div>
+      <div class="drawer-select">
+        <span>Hunt The Front's Souther...</span>
+        <span>&#9662;</span>
+      </div>
+
+      <div class="drawer-sep"></div>
+
+      <a class="drawer-link active" href="events.html">Events</a>
+      <a class="drawer-link" href="reports.html">Reports</a>
+      <a class="drawer-link" href="report-pos-card.html">Transactions</a>
+      <a class="drawer-link" href="#">Settings</a>
+      <a class="drawer-link" href="#">Account</a>
+
+      <div class="drawer-foot">
+        <div class="theme-toggle">
+          <span aria-hidden="true">&#9728;</span>
+          <span class="toggle-track" role="switch" aria-checked="false"></span>
+        </div>
+        <button class="switch-btn">&#8646; Switch</button>
+        <a href="index.html" class="logout-btn">&#8629; Log Out</a>
+      </div>
+    </aside>
+    <a href="events.html" class="drawer-scrim" aria-label="Close"></a>
+  </div>
+</body>
+</html>

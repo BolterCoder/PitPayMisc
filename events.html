@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events - Ticket Hoss POS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="left">3:43PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>86%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <header class="dash-header">
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <h1>Events</h1>
+  </header>
+
+  <section class="dash-grid">
+    <div class="dash-main">
+      <div class="section-label">NEXT UP</div>
+      <div class="featured-card active">
+        <div class="featured-active-head">
+          <h2>USCS Sprint Cars</h2>
+          <span class="upcoming-pill">&#128197; Upcoming</span>
+        </div>
+        <div class="featured-active-date"><span class="clock"></span> Friday, May 15</div>
+
+        <div class="stats-row">
+          <div class="stat"><div class="num">55</div><div class="label">Tickets Sold</div></div>
+          <div class="stat"><div class="num accent">0</div><div class="label">Checked In</div></div>
+          <div class="stat"><div class="num">55</div><div class="label">Remaining</div></div>
+        </div>
+
+        <div class="featured-actions active">
+          <a href="pos-category.html" class="action-btn" style="text-decoration:none">&#128722; SELL</a>
+          <button class="action-btn">&#8599; MANAGE</button>
+          <a href="scan.html" class="action-btn disabled" style="text-decoration:none">&#9783; SCAN</a>
+        </div>
+      </div>
+
+      <div class="section-label">UPCOMING</div>
+      <div class="upcoming">
+        <div class="event-row filled">
+          <div class="event-date-badge">
+            <div class="dow">SAT</div>
+            <div class="day">MAY 16</div>
+          </div>
+          <div class="event-meta">
+            <h3>USCS Sprint Car and Late Model Challenge Series Round 3</h3>
+            <p>Hunt the Front's Southern Raceway</p>
+          </div>
+          <div class="event-actions">
+            <button class="ico-btn" aria-label="Sell">&#128722;</button>
+            <button class="ico-btn" aria-label="Manage">&#8599;</button>
+            <button class="ico-btn" aria-label="Scan">&#9783;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label transactions" style="margin-top:32px">RECENT TRANSACTIONS</div>
+      <div class="tx-row">
+        <div class="tx-icon">&#128179;</div>
+        <div class="tx-info">
+          <strong>Stacey Williams</strong>
+          <span><span class="id">#119006</span> May 15 at 3:24 PM</span>
+        </div>
+        <div class="tx-amount">
+          <span class="amt">$55.10</span>
+          <span class="status">Complete</span>
+        </div>
+        <span class="tx-chevron">&rsaquo;</span>
+      </div>
+    </div>
+
+    <aside class="dash-rail">
+      <div class="rail-card">
+        <div class="icon" aria-hidden="true">&#128424;</div>
+        <div class="meta"><strong>No Printer</strong><span>&bull; Not Set Up</span></div>
+        <a href="events-printer.html" class="pill">CONNECT</a>
+      </div>
+      <div class="rail-card">
+        <div class="icon" aria-hidden="true">&#128179;</div>
+        <div class="meta"><strong>No Readers</strong><span>&bull; Not Available</span></div>
+        <a href="events-card-reader.html" class="pill">CONNECT</a>
+      </div>
+      <div class="rail-card row-link">
+        <div class="icon" aria-hidden="true">&#9783;</div>
+        <div class="meta"><strong style="color:#fff">Order Lookup</strong><span>Find an order by scanning a ticket barcode</span></div>
+        <span class="chevron">&rsaquo;</span>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-head"><span aria-hidden="true">&#128214;</span> LEARNING CENTER</div>
+        <div class="learn-thumb">
+          <div class="stamp"><span>Pit</span><span>Pay</span></div>
+          <div class="hoss-mini">TICKET<br>HOSS</div>
+          <div class="play" aria-hidden="true">&#9654;</div>
+          <div class="coming">POS App<br>Coming Soon!</div>
+          <div class="duration">0:17</div>
+        </div>
+        <div class="learn-body">
+          <h3>POS App - Initial Setup</h3>
+          <p>Learn how to connect your printer, process payments, and manage your point of sale in under 5 minutes.</p>
+          <div class="learn-actions">
+            <button class="btn-watch">&#9654; WATCH</button>
+            <a href="#" class="btn-guides">&rsaquo; ALL GUIDES</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <div class="home-indicator"></div>
+</body>
+</html>

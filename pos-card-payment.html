@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="charge-page">
+  <div class="status-bar">
+    <div class="left">3:49PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>83%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <main class="charge-body">
+    <div class="charge-amt">$50.00</div>
+    <p class="charge-sub">Enter card details below</p>
+
+    <div class="card-strip">
+      <span class="icon" aria-hidden="true">&#128179;</span>
+      <span>1234 1234 1234 1234</span>
+      <span>MM/YY</span>
+      <span>CVC</span>
+    </div>
+
+    <button class="btn-charge" disabled>Charge $50.00</button>
+    <a class="btn-cancel" href="pos-cart-filled.html">Cancel</a>
+  </main>
+
+  <div class="home-indicator"></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter One Time Password - Ticket Hoss</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="left">3:41PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>87%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <nav class="app-nav">
+    <a href="login-phone.html"><span>&larr;</span> Switch App</a>
+  </nav>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <div class="auth-logo">
+        <div class="hoss-logo">
+          <div class="ticket">TICKET</div>
+          <div class="hoss">HOSS</div>
+          <div class="powered">powered by PitPay</div>
+        </div>
+      </div>
+
+      <h1 class="auth-title">Enter One Time<br>Password</h1>
+      <p class="auth-sub">An SMS code was sent to</p>
+      <div class="otp-edit">(704) 791-9020 <a href="login-phone.html" class="edit">Edit</a></div>
+
+      <form action="events-welcome.html" method="get">
+        <div class="otp-row">
+          <input class="otp-box active" type="text" maxlength="1" aria-label="OTP digit 1">
+          <input class="otp-box" type="text" maxlength="1" aria-label="OTP digit 2">
+          <input class="otp-box" type="text" maxlength="1" aria-label="OTP digit 3">
+          <input class="otp-box" type="text" maxlength="1" aria-label="OTP digit 4">
+          <input class="otp-box" type="text" maxlength="1" aria-label="OTP digit 5">
+          <input class="otp-box" type="text" maxlength="1" aria-label="OTP digit 6">
+        </div>
+
+        <a href="#" class="resend">Resend Code</a>
+
+        <div class="tip">
+          <div class="tip-icon" aria-hidden="true">&#128172;</div>
+          <div class="tip-body">
+            <strong>Not receiving your code?</strong>
+            <p>Make sure text message spam filters are turned off on your device.</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+        <a href="#" class="alt-link">Send code via email instead</a>
+        <div class="auth-foot"><a href="#">Having Trouble?</a></div>
+      </form>
+    </div>
+  </main>
+
+  <div class="home-indicator"></div>
+</body>
+</html>
