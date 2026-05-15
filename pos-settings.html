@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="status-bar">
+    <div class="left">4:00PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>76%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <header class="dash-header">
+    <button class="menu-btn" aria-label="Menu">&#9776;</button>
+    <h1>POS Settings</h1>
+  </header>
+
+  <main class="pos-settings">
+    <section class="settings-card">
+      <h2><span class="ico">&#128424;</span> Printer</h2>
+      <button class="find-btn">FIND PRINTERS</button>
+      <p class="network-tip">
+        <span class="wifi" aria-hidden="true">&#128246;</span><br>
+        Make sure your printer is on the same network,<br>
+        then tap "Find Printers".
+      </p>
+      <div class="manual-divider">or enter IP manually</div>
+      <div class="field-lg">
+        <label for="ip">IP Address</label>
+        <input id="ip" type="text" placeholder="192.168.1.100">
+      </div>
+      <div class="field-lg">
+        <label for="port">Port</label>
+        <input id="port" type="text" value="9100">
+      </div>
+      <button class="save-test" disabled>SAVE &amp; TEST</button>
+    </section>
+
+    <section class="settings-card">
+      <h2>Payment Methods</h2>
+      <div class="radio-list">
+        <div class="radio"><span class="dot"></span>Card Only</div>
+        <div class="radio"><span class="dot"></span>Cash Only</div>
+        <div class="radio active"><span class="dot"></span>Card + Cash</div>
+      </div>
+    </section>
+
+    <section class="settings-card">
+      <h2>Cash Calculator</h2>
+      <div class="calc-toggle-row">
+        <span class="big-toggle on" role="switch" aria-checked="true"></span>
+        <span>Show cash calculator</span>
+      </div>
+    </section>
+
+    <section class="settings-card">
+      <h2>Ticket Delivery</h2>
+      <div class="radio-list">
+        <div class="radio"><span class="dot"></span>Mobile</div>
+        <div class="radio"><span class="dot"></span>Print</div>
+        <div class="radio active"><span class="dot"></span>Physical</div>
+      </div>
+    </section>
+
+    <section class="settings-card">
+      <h2>Receipt Delivery</h2>
+      <div class="radio-list">
+        <div class="radio"><span class="dot"></span>Mobile</div>
+        <div class="radio"><span class="dot"></span>Print with Tickets</div>
+        <div class="radio"><span class="dot"></span>Print Separate</div>
+        <div class="radio active"><span class="dot"></span>None</div>
+      </div>
+    </section>
+  </main>
+
+  <div class="save-bar">
+    <a href="events.html" class="save-btn">SAVE SETTINGS</a>
+  </div>
+
+  <div class="home-indicator"></div>
+</body>
+</html>

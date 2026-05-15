@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enter QR Code</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="qr-page">
+  <div class="status-bar">
+    <div class="left">4:01PM&nbsp;&nbsp;&nbsp;Fri May 15</div>
+    <div class="right">
+      <span class="signal-bars"><span></span><span></span><span></span><span></span></span>
+      <span>5G</span>
+      <span aria-hidden="true">&#9790;</span>
+      <span>76%</span>
+      <span class="battery-icon"><span class="battery-fill"></span></span>
+    </div>
+  </div>
+
+  <header class="pos-page-head">
+    <a class="pos-back" href="scan.html" aria-label="Back">&larr;</a>
+    <h1>Enter QR Code</h1>
+    <div class="pos-right-icons"><a href="events.html" style="color:#fff;text-decoration:none">&times;</a></div>
+  </header>
+
+  <div class="qr-tabs">
+    <a class="qr-tab active" href="scan-manual-qr.html">&#128290; QR Code</a>
+    <a class="qr-tab" href="scan-manual-order.html">&#129534; Order #</a>
+  </div>
+
+  <main class="qr-body">
+    <div class="qr-icon" aria-hidden="true"></div>
+    <p class="qr-hint">Type or paste the QR code value from the ticket</p>
+
+    <div class="qr-field">
+      <label for="qr">QR Code</label>
+      <input id="qr" class="qr-input" type="text" placeholder="Enter QR code value...">
+      <button class="qr-search" disabled>SEARCH</button>
+    </div>
+  </main>
+
+  <div class="home-indicator"></div>
+</body>
+</html>
